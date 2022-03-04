@@ -1,0 +1,161 @@
+html {
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+
+.body-title {
+  background-color: #FA7979;
+  font-family: 'Roboto Mono', monospace;
+  padding: 100px;
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: none;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.body-page {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-color: #FA7979;
+  font-family: 'Roboto Mono', monospace;
+  }
+
+
+.button-big {
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  transition-duration: 0.4s;
+  padding: 12px 28px;
+  background-color: #FA7979;
+  border-radius: 40px;
+  color: black;
+  border: 2px solid black;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+.button-big:hover {
+  background-color: #EC5151;
+  border: 2px solid #EC5151;
+  color: white;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+.button-on-image-red {
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  transition-duration: 0.4s;
+  padding: 12px 28px;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 2px solid #EC5151;
+  color: #EC5151;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+.button-on-image-red:hover {
+  background-color: #EC5151;
+  border: 2px solid #EC5151;
+  color: black;
+  background-color: #EC5151;
+  border-radius: 40px;
+  border: 2px solid #EC5151;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+.button-on-image-yellow {
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  transition-duration: 0.4s;
+  padding: 12px 28px;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 2px solid #FFF50D;
+  color: #FFF50D;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+.button-on-image-yellow:hover {
+  background-color: #FFF50D;
+  border: 2px solid #FFF50D;
+  color: black;
+  background-color: #FFF50D;
+  border-radius: 40px;
+  border: 2px solid #FFF50D;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+.button-next {
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  transition-duration: 0.4s;
+  padding: 12px 28px;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 2px solid #EC5151;
+  color: #EC5151;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+.button-next:hover {
+  background-color: #EC5151;
+  border: 2px solid #EC5151;
+  color: black;
+  background-color: #EC5151;
+  border-radius: 40px;
+  border: 2px solid #EC5151;
+  cursor: url("../path-chinatown/images/cursor-static.gif"), auto;
+}
+
+
+.rounded-container {
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.img-shadow {
+  box-shadow: 0px 0px 13px #FFF50D;
+  }
+
+.drop-shadow {
+        filter: drop-shadow(0px 0px 13px #FFF50D);
+      }
+
+#hover-block {
+	background-color: #FFF50D;
+	width: fit-content; /* Just what it needs. */
+}
+
+/* The child element. */
+#hover-block div {
+	bottom: 0;
+	opacity: 0; /* You can’t transition visibility, but can use opacity at the same time. */
+	position: absolute;
+	transition: all 0.5s; /* Less blinky! */
+	visibility: hidden; /* Hidden by default. */
+}
+
+#hover-block:hover div {
+	opacity: 1; /* For a smooth transition. */
+	visibility: visible; /* Shown when hovering over the parent. */
+}
+
+#hover-block div img {
+	max-width: 350px;
+}
